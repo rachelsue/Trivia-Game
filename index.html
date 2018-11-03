@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="start">
+        <h1>Press start to take the quiz!</h1>
+        <hr style = "margin-bottom: 20px">
+
+        <button id ="startBtn">Start!</button>
+
+    </div>
+    <div class="grid">
+        <div id = "quiz">
+            <h1>Quiz</h1>
+            <hr style="margin-bottom: 20px">
+
+            <span id="timer"></span>
+
+            <p id="question"></p>
+            <span id="answer"></span>
+
+            <button class="d" id="btn0"><span id="choice0"></span></button>
+            <button class="d" id="btn1"><span id="choice1"></span></button>
+            <button class="d" id="btn2"><span id="choice2"></span></button>
+            <button class="d" id="btn3"><span id="choice3"></span></button>
+        </div>
+
+        <hr style="margin-top: 50px">
+        <footer>
+            <p id="progress">Question x of y</p>
+        </footer>
+    </div>
+    
+    <script src="assets/javascript/timer.js"></script>
+    <script src="assets/javascript/quiz_controller.js"></script>
+    <script src="assets/javascript/question.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
